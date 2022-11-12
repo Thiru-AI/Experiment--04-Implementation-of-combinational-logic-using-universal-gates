@@ -1,15 +1,17 @@
 # Experiment--04-Implementation-of-combinational-logic-using-universal-gates
 Implementation of combinational logic using universal-gates
-## Aim:
+ 
+## AIM:
 To implement the given logic function using NAND and NOR gates and to verify its operation in Quartus using Verilog programming.
 
 F=((C'.B.A)'(D'.C.A)'(C.B'.A)')' using NAND gate
 F=(((C.B'.A)+(D.C'.A)+(C.B'.A))')' using NOR gate
-## Equipment's Required:
-    Hardware – PCs, Cyclone II , USB flasher
-    Software – Quartus prime
+## Equipments Required:
+### Hardware – PCs, Cyclone II , USB flasher
+### Software – Quartus prime
 
-## Theory:
+
+## Theory
 Logic gates are electronic circuits which perform logical functions on one or more inputs to produce one output. 
 
 ## Using NAND gates
@@ -19,30 +21,20 @@ F=((C'.B.A)'(D'.C.A)'(C.B'.A)')'
 
 ## Logic Diagram
 
-## Using NOR gates
+Using NOR gates
 NOR gate is actually a combination of two logic gates: OR gate followed by NOT gate. So its output is complement of the output of an OR gate. This gate can have minimum two inputs, output is always one. By using only NOR gates, we can realize all logic functions: AND, OR, NOT, Ex-OR, Ex-NOR, NAND. So this gate is also called universal gate. Designing a circuit with NOR gates only uses the same basic techniques as designing a circuit with NAND gates; that is, the application of deMorgan’s theorem. The only difference between NOR gate design and NAND gate design is that the former must eliminate product terms and the later must eliminate sum terms.
 
 F=(((C.B'.A)+(D.C'.A)+(C.B'.A))')'
 
-## Logic Diagram
 ## Procedure:
-
-1. Create a project with required entities.
-2. Create a module along with respective file name.
-3. Run the respective programs for the given boolean equations.
-4. Run the module and get the respective RTL outputs.
-5. Create university program(VWF) for getting timing diagram.
-6. Give the respective inputs for timing diagram and obtain the results.
-
+1.Create a project with required entities. 2.Create a module along with respective file name. 3.Run the respective programs for the given boolean equations. 4.Run the module and get the respective RTL outputs. 5.Create university program(VWF) for getting timing diagram. 6.Give the respective inputs for timing diagram and obtain the results.
 ## Program:
-~~~
 /*
-Program to implement the given logic function using NAND and NOR gates and to verify
-its operations in quartus using Verilog programming.
-Developed by: H.Syed Abdul Wasih
-Register Number: 212221240057
+Program to implement the given logic function using NAND and NOR gates and to verify its operations in quartus using Verilog programming.
+Developed by: Ranjith D
+RegisterNumber: 212221240044
 */
-
+~~~
 Using NAND Operation:
 
 module comb1(A,B,C,D,F);
@@ -70,23 +62,19 @@ endmodule
 ~~~
 
 ## Output:
-
-Using NAND Operation:
-
-### RTL Realization:
-![out](1.png)
-### Truth Table:
-![out](2.png)
-### Timing Diagram:
-![out](3.png)
-
-Using NOR Operation:
-
-### RTL Realization:
-![out](4.png)
-### Truth Table:
-![out](5.png)
-### Timing Diagram:
-![out](6.png)
+## Using NAND Operation:
+### RTL
+![](https://github.com/Hariharan-061102/Experiment--04-Implementation-of-combinational-logic-using-universal-gates/blob/main/1.jpg)
+### Truth table
+![](https://github.com/Hariharan-061102/Experiment--04-Implementation-of-combinational-logic-using-universal-gates/blob/main/2.jpg)
+### Timing Diagram
+![](https://github.com/Hariharan-061102/Experiment--04-Implementation-of-combinational-logic-using-universal-gates/blob/main/3.jpg)
+## Using NOR Operation:
+### RTL
+![](https://github.com/Hariharan-061102/Experiment--04-Implementation-of-combinational-logic-using-universal-gates/blob/main/4.jpg)
+### Truth table
+![](https://github.com/Hariharan-061102/Experiment--04-Implementation-of-combinational-logic-using-universal-gates/blob/main/5.jpg)
+### Timing Diagram
+![](https://github.com/Hariharan-061102/Experiment--04-Implementation-of-combinational-logic-using-universal-gates/blob/main/6.jpg)
 ## Result:
-Thus, the given logic functions are implemented using NAND and NOR gates and their operations are verified using Verilog programming.
+Thus the given logic functions are implemented using NAND and NOR gates and their operations are verified using Verilog programming.
